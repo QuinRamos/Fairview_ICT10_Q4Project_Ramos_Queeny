@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- PyScript-->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    
+<!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ <title> 10 Ruby Class</title>
+
+ <!-- Styling -->
+
+ <style>
+        body {
+            background-color: #ffffd9; 
+            margin: auto;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            padding: 150px 0;
+            margin: 0;
+            align-items: center;
+            
+        }
+
+        .navbar {
+            background: linear-gradient(to right, #f5d1ea, #df8c9f, #df8c9f, #f5d1ea);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgba(255, 255, 217, 0.3);
+            border: 1px solid #ffffd9;
+            border-radius: 12px;
+            padding: 5px 15px;
+            margin-left: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #ffffd9;
+            color: #df8c9f;
+        }
+
+        .navbar img {
+            height: 50px;  
+            width: auto;   
+            margin-right: 15px; 
+            vertical-align: middle; 
+        }
+
+        .container {
+            background-color: #f0c0ce;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgb(168, 146, 157);
+            text-align: center;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        .btn-default {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffffd9; 
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .btn-default:hover {
+            background-color: #ffffd9; 
+
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ffffd9;
+            border-radius: 8px;
+        }
+
+        hr {
+            border: 0;
+            height: 3px;
+            background: #ffffff; 
+            margin: 20px 0;   
+            width: 100%;      
+        }
+
+ </style>
+ </head>
+
+ <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid"> 
+       
+        <a class="navbar-brand d-flex align-items-center" href="index.html"><img src="ruby.png">
+            <span style="font-family: Poppins; color: black; font-size: large; text-align: left;">10 Ruby Class</span></a> 
+       
+            <div class="collapse navbar-collapse justify-content-end" id="nav-menu">
+            <ul class="navbar-nav">
+           
+            <li class="nav-item">
+            <a class="nav-link" href="index.html" style="font-family: Poppins; color: black; font-size: large;">Add Classmate</a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link" href="track.html" style="font-family: Poppins; color: black; font-size: large;">Attendance</a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link" href="highlights.html" style="font-family: Poppins; color: black; font-size: large;">Highlights</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+</nav>
+
+<body>
+
+<!-- Form -->
+
+<div class="container"> 
+    <div class="form-group"> 
+
+        <!-- Header -->
+        <h1>10-Ruby Classmates System</h1>
+        <h2>♥︎</h2>
+        <hr>
+
+        <!-- Name -->
+        <label for="name">Name:</label> 
+        <input type="text" id="name" class="form-control" placeholder="Enter your Name...">
+        <br>
+
+        <!-- Section -->
+        <label for="section">Section:</label>
+        <input type="text" id="section" class="form-control" placeholder="Enter your Section..."> 
+        <br>
+
+        <!-- Favorite Subject -->
+        <label for="favorite_subject">Favorite Subject:</label>
+        <input type="text" id="favorite_subject" class="form-control" placeholder="Enter your Favorite Subject...">   
+    </div>
+    <br> 
+
+    <!-- Buttons -->
+    <button py-click="add_classmate" class="btn btn-default" id="add_classmate">Add Classmate</button> 
+    <button py-click="show_list" class="btn btn-default" id="show_list">Show Classmate List</button> 
+    
+    <div style="margin-top:10px">
+        <p id="output"></p>
+    </div>
+</div>
+
+<!-- Python File -->
+ <script type="py" src="main.py"></script>
+
+</body>
+</html>

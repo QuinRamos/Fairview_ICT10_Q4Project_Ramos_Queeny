@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- PyScript-->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    
+<!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+ <title> 10 Ruby Class</title>
+
+ <!-- Styling -->
+
+ <style>
+     body {
+            background-color: #ffffd9; 
+            margin: auto;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            padding: 150px 0;
+            margin: 0;
+            align-items: center;
+            
+        }
+
+        .navbar {
+            background: linear-gradient(to right, #f5d1ea, #df8c9f, #df8c9f, #f5d1ea);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgba(255, 255, 217, 0.3);
+            border: 1px solid #ffffd9;
+            border-radius: 12px;
+            padding: 5px 15px;
+            margin-left: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #ffffd9;
+            color: #df8c9f;
+        }
+
+        .navbar img {
+            height: 50px;  
+            width: auto;   
+            margin-right: 15px; 
+            vertical-align: middle; 
+        }
+
+        .content-wrapper {
+            padding: 10px 40px 40px 30px; 
+            max-width: 1200px;
+            margin: 0 auto; 
+        }
+
+            h1 {
+            text-align: center;
+            color: black;
+            font-weight: bold;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-info {
+            padding: 10px 14px 14px;
+        }
+
+        .card-info h3 {
+            margin: 0 0 4px;
+            font-size: 16px;
+        }
+
+        .card-info p {
+            margin: 0;
+            font-size: 13px;
+            color: gray;
+        }
+
+         hr {
+            border: 0;
+            height: 3px;
+            background: #d395a7;
+            margin: 20px 0;   
+            width: 100%;      
+        }
+
+ </style>
+ </head>
+
+ <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-md fixed-top">
+    <div class="container-fluid"> 
+       
+        <a class="navbar-brand d-flex align-items-center" href="index.html"><img src="ruby.png">
+            <span style="font-family: Poppins; color: black; font-size: large; text-align: left;">10 Ruby Class</span></a> 
+       
+            <div class="collapse navbar-collapse justify-content-end" id="nav-menu">
+            <ul class="navbar-nav">
+           
+            <li class="nav-item">
+            <a class="nav-link" href="index.html" style="font-family: Poppins; color: black; font-size: large;">Add Classmate</a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link" href="track.html" style="font-family: Poppins; color: black; font-size: large;">Attendance</a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link" href="highlights.html" style="font-family: Poppins; color: black; font-size: large;">Highlights</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+</nav>
+
+<br><br>
+
+<!-- Cards -->
+
+<div class="content-wrapper">
+    <h1>10 Ruby Highlights</h1>
+    <hr>
+    <div class="gallery" id="gallery"></div>
+</div>
+
+<!-- Python File -->
+ <script type="py" src="highlights.py"></script>
+
+</body>
+</html>
